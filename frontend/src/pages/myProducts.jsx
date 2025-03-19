@@ -9,7 +9,7 @@ export default function MyProducts() {
     const email = "tanishqsinghal483@gmail.com"
 
     useEffect(() => {
-        fetch(`http://localhost:5000/api/v2/product/my-products?email=${email}`)
+        fetch(`http://localhost:8000/api/v2/product/my-products?email=${email}`)
             .then((res) => {
                 if (!res.ok) {
                     throw new Error(`HTTP error! status: ${res.status}`);

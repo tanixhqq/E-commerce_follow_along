@@ -10,7 +10,7 @@ const Cart = () => {
   const navigate = useNavigate(); // Initialize navigate
 
   useEffect(() => {
-    fetch(`http://localhost:5000/api/v2/product/cartproducts?email=${'tanishqsinghal483@gmail.com'}`)
+    fetch(`http://localhost:8000/api/v2/product/cartproducts?email=${'tanishqsinghal483@gmail.com'}`)
       .then((res) => {
         if (!res.ok) {
           throw new Error(`HTTP error! status: ${res.status}`);
