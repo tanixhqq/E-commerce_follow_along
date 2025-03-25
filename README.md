@@ -225,3 +225,26 @@ In this milestone, we focused on creating the frontend page that displays all us
 Welcome to Milestone 28!
 
  In this milestone, we focused on adding a cancel order feature to the my-orders page and creating a backend endpoint for handling order cancellations.
+
+ ## Steps for Milestone 29📝
+Please create an PayPal account first PayPal developer dashboard
+Once you login you can see an option for an sandbox accounts.
+Copy the UserID of that account and save it.
+In this sandbox accounts you can find your client id copy and save it.
+In your order conformation page you need two options for payment one is COD and another is online payment.
+Create radio buttons to select COD or online payment and when we click on online payment PayPal buttons need to be displayed.
+In next milestone we will write an code to display and use those PayPal online Payments buttons.
+
+
+## Steps for Milestone 30📝
+After creating PayPal account and getting the UserID inside sandbox account.
+Implement online payment using PayPal API using the client key you created earlier.
+Download NPM package called react-paypal-js that will provide an component called PayPalScriptProvider which will display online payment methods like credit or debit card etc..,
+
+## Steps for Milestone 31📝
+Install an npm package called react-redux
+create an new folder called store with two files store.js and userActions.js.
+We will store user mail inside global state.
+In store.js file configure an store with userReducer function that will handle global user email state.
+Inside userActions.js file write an function called setEmail that will help in storing email state inside global state.
+In Index.js file make sure to wrap APP component inside provider component with store as props.
